@@ -3,6 +3,37 @@
   <head>
     <meta charset="utf-8" />
     <title>Exercice 1</title>
+    <script>
+
+      window.addEventListener("load", function() {
+
+        var image1 = document.getElementById("image1");
+
+
+
+        // Chemin de la deuxième image
+
+        var deuxiemeImage = "images/image1_2.jpg";
+
+
+
+        // Fonction exécutée lorsque le curseur survole l'image
+
+        function changerImage() {
+
+          image1.src = deuxiemeImage;
+
+        }
+
+
+
+        // Ajouter l'événement "mouseover" pour déclencher la fonction changerImage
+
+        image1.addEventListener("mouseover", changerImage);
+
+      });
+
+    </script>
   </head>
   <body>
       <img src="images/image1.jpg" id="image1" />
