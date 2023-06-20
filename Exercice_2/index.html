@@ -3,6 +3,27 @@
 <head>
   <meta charset="utf-8" />
   <title>Exercice 2</title>
+  <script>
+
+    window.addEventListener("load", function() {
+
+      let lastnameInput = document.getElementById("lastname");
+
+      // Fonction exécutée lorsque le champ de saisie perd le focus
+
+      function afficherMessage() {
+
+        alert("Merci de votre participation");
+
+      }
+
+      // Ajouter l'événement "blur" pour déclencher la fonction afficherMessage
+
+      lastnameInput.addEventListener("blur", afficherMessage);
+
+    });
+
+  </script>
 </head>
 <body>
   <form>
